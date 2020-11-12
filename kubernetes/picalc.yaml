@@ -19,6 +19,8 @@ spec:
         ports:
         - name: http-server
           containerPort: 8080
+      imagePullSecrets:
+        - name: cedp-registry
 ---
 apiVersion: v1
 kind: Service
